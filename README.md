@@ -1,2 +1,2 @@
-# pod-files-frontend
-The frontend for the PodFiles containerized file-server
+# the-podman-files-frontend
+The frontend for The Podman Files containerized file-server
