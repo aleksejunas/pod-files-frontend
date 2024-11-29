@@ -19,7 +19,7 @@ import {
 
 const faBrandIcons = [faLinux, faFedora, faUbuntu, faDocker, faRust, faGithub];
 
-const HomePage = () => {
+const WelcomePage = () => {
   return (
     <div className="bg-pink-100 py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
@@ -61,4 +61,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default WelcomePage;
