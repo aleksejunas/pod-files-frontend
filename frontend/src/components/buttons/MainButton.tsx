@@ -8,9 +8,9 @@ type ButtonVariant = "primary" | "secondary" | "danger";
 const getButtonClasses = (variant: ButtonVariant): string => {
   const baseClasses = "px-4 py-2 rounded-md";
   const variantClasses = {
-    primary: "bg-blue-500 text-white hover:bg-blue-600",
-    secondary: "bg-gray-500 text-white hover:bg-gray-600",
-    danger: "bg-red-500 text-white hover:bg-red-600",
+    primary: "bg-[#458588] text-[#ebdbb2] hover:bg-[#83a598]", // Gruvbox blue
+    secondary: "bg-[#b16286] text-[#ebdbb2] hover:bg-[#d3869b]", // Gruvbox purple
+    danger: "bg-[#cc241d] text-[#ebdbb2] hover:bg-[#fb4934]", // Gruvbox red
   };
 
   return `${baseClasses} ${variantClasses[variant]}`;
