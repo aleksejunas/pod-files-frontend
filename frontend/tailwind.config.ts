@@ -22,19 +22,28 @@ const config: Config = {
           orange: "#d65d0e",
           gray: "#928374",
         },
+
+        pastel: {
+          "bg-primary": "#f8f8ff",
+          "bg-secondary": "#e6e6fa",
+          "bg-tertiary": "#ffe4e1",
+          "fg-primary": "#696969",
+          "fg-secondary": "#808080",
+          "fg-tertiary": "#a9a9a9",
+          "fg-quaternary": "#c0c0c0",
+          red: "#ffb6c1",
+          green: "#98fb98",
+          yellow: "#fffacd",
+          blue: "#add8e6",
+          purple: "#dda0dd",
+          aqua: "#e0ffff",
+          orange: "#ffdab9",
+          gray: "#d3d3d3",
+        },
       },
     },
   },
   plugins: [],
 };
-export default config;
 
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }
-//
+export default config;
