@@ -1,13 +1,9 @@
 import "./App.css";
-import WelcomePage from "./pages/WelcomePage";
+import { AppNavigator } from "./navigation";
 import React from "react";
 
-function App() {
-  return (
-    <>
-      <WelcomePage />
-    </>
-  );
-}
+const App = () => {
+  return <AppNavigator />;
+};
 
 export default App;
