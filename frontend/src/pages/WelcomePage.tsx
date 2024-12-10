@@ -16,12 +16,14 @@ import {
   faGithub,
   faRust,
 } from "@fortawesome/free-brands-svg-icons";
+import Navbar from "../components/navbar/NavbarSimple";
 
 const faBrandIcons = [faLinux, faFedora, faUbuntu, faDocker, faRust, faGithub];
 
 const WelcomePage = () => {
   return (
     <div className="bg-primary py-6 flex flex-col justify-center sm:py-12">
+      <Navbar />
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
         <div className="relative px-4 py-10 bg-secondary opacity-95 shadow-lg sm:rounded-3xl sm:p-20">
           <div className="max-w-md mx-auto">

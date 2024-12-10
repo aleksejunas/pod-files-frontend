@@ -6,6 +6,8 @@ import { routes } from "./routes";
 
 import HomePage from "../pages/HomePage";
 import WelcomePage from "../pages/WelcomePage";
+import FileServerPage from "../pages/FileServerPage";
+import ContactPage from "../pages/ContactPage";
 
 const AppNavigator = () => {
   return (
@@ -25,6 +27,8 @@ const AppNavigator = () => {
         )}
         <Route path="/" element={<HomePage />} />
         <Route path="/welcome" element={<WelcomePage />} />
+        <Route path="/fileserver" element={<FileServerPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </Router>
   );

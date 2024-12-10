@@ -1,4 +1,5 @@
 // src/navigation/routes.js
+import FileServerPage from "../pages/FileServerPage";
 import HomePage from "../pages/HomePage";
 import WelcomePage from "../pages/WelcomePage";
 
@@ -10,6 +11,10 @@ export const routes = [
   {
     path: "/welcome",
     component: WelcomePage,
+  },
+  {
+    path: "/fileserver",
+    component: FileServerPage,
   },
 ];
 

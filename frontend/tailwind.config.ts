@@ -4,6 +4,9 @@ const config: Config = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}", "./index.html"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"],
+      },
       colors: {
         gruvbox: {
           "bg-primary": "#282828",
@@ -22,7 +25,6 @@ const config: Config = {
           orange: "#d65d0e",
           gray: "#928374",
         },
-
         pastel: {
           "bg-primary": "#f8f8ff",
           "bg-secondary": "#e6e6fa",
@@ -43,7 +45,44 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities, theme }) {
+      const gruvboxColors = theme("colors.gruvbox");
+      const pastelColors = theme("colors.pastel");
+
+      const newUtilities = {
+        // Gruvbox
+        ".text-fg-primary": {
+          color: gruvboxColors["fg-primary"],
+        },
+        ".text-fg-secondary": {
+          color: gruvboxColors["fg-secondary"],
+        },
+        ".hover\\:text-fg-primary:hover": {
+          color: gruvboxColors["fg-primary"],
+        },
+        ".hover\\:text-fg-secondary:hover": {
+          color: gruvboxColors["fg-secondary"],
+        },
+
+        // Pastel
+        ".text-pastel-fg-primary": {
+          color: pastelColors["fg-primary"],
+        },
+        ".text-pastel-fg-secondary": {
+          color: pastelColors["fg-secondary"],
+        },
+        ".hover\\:text-pastel-fg-primary:hover": {
+          color: pastelColors["fg-primary"],
+        },
+        ".hover\\:text-pastel-fg-secondary:hover": {
+          color: pastelColors["fg-secondary"],
+        },
+      };
+
+      addUtilities(newUtilities, ["hover"]);
+    },
+  ],
 };
 
 export default config;
